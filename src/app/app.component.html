@@ -1,3 +1,8 @@
 <app-navbar></app-navbar>
+<h1>{{title | uppercase}}</h1>
+<p>{{today}}</p>
+<img [src]="image" [width]="imagewidth">
+<br>
+<span>selling price : {{sellingPrice}}  profit: {{sellingPrice | profit}}</span>
 <app-details></app-details>
 <app-details-reviews></app-details-reviews>

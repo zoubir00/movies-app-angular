@@ -13,6 +13,7 @@ import { LoaderComponent } from './components/loader/loader.component';
 import { DetailsMoviesComponent } from './components/details-movies/details-movies.component';
 import { DetailsReviewsComponent } from './components/details-reviews/details-reviews.component';
 import { DetailsComponent } from './components/details/details.component';
+import { profitPipe } from './pipes/profit.pipe';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,10 @@ import { DetailsComponent } from './components/details/details.component';
     LoaderComponent,
     DetailsMoviesComponent,
     DetailsReviewsComponent,
-    DetailsComponent
+    DetailsComponent,
+
+    //pipes
+    profitPipe
   ],
   imports: [
     BrowserModule,
