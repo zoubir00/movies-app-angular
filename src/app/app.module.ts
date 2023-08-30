@@ -14,6 +14,8 @@ import { DetailsMoviesComponent } from './components/details-movies/details-movi
 import { DetailsReviewsComponent } from './components/details-reviews/details-reviews.component';
 import { DetailsComponent } from './components/details/details.component';
 import { profitPipe } from './pipes/profit.pipe';
+import { FormsModule } from '@angular/forms';
+
 
 @NgModule({
   declarations: [
@@ -34,7 +36,8 @@ import { profitPipe } from './pipes/profit.pipe';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -16,4 +16,20 @@ export class AppComponent {
   multiClasses='sample-bgColor sample-color';
   multistyles=' background-color: cyan; color: black;';
   bgcolor= 'gold';
+
+
+  // event binding
+  timeNow=new Date();
+
+  setTimeNow(){
+    this.timeNow=new Date();
+  }
+  // template variable
+  pcolor='';
+  setColor(_color:string){
+    console.log(_color);
+    this.pcolor=_color;
+  }
+  // two way data binding
+  fullName='';
 }
