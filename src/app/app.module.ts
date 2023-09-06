@@ -15,6 +15,8 @@ import { DetailsReviewsComponent } from './components/details-reviews/details-re
 import { DetailsComponent } from './components/details/details.component';
 import { profitPipe } from './pipes/profit.pipe';
 import { FormsModule } from '@angular/forms';
+import { DetailsActorsComponent } from './components/details-actors/details-actors.component';
+
 
 
 @NgModule({
@@ -30,6 +32,7 @@ import { FormsModule } from '@angular/forms';
     DetailsMoviesComponent,
     DetailsReviewsComponent,
     DetailsComponent,
+    DetailsActorsComponent,
 
     //pipes
     profitPipe

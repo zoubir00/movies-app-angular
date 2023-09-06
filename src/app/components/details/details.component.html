@@ -1,1 +1,87 @@
-<p>details works!</p>
+<h1>Movie title</h1>
+<div class="row ms-3">
+    <div class="col-md-6">
+        <iframe width="560" height="315"
+         src="https://www.youtube.com/embed/8d2_pXEiWAo?si=AdZpNhunqu-enV3K" 
+         title="YouTube video player" 
+         frameborder="0" 
+         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen>
+
+        </iframe>
+    </div>
+    <div class="col-md-6">
+        <p>This is going to be a placeholder for the movie plot</p>
+        <div class="row me-3"> 
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-header">
+                     Stars
+                    </div>
+                    <ul class="list-group list-group-flush">
+                     <li class="list-group-item">star 1 name</li>
+                     <li  class="list-group-item">star 2 name</li>
+                     <li  class="list-group-item">Star 3 name</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-header">
+                     Directors
+                    </div>
+                    <ul class="list-group list-group-flush">
+                     <li class="list-group-item">Director 1 name</li>
+                     <li  class="list-group-item">Director 2 name</li>
+                     <li  class="list-group-item">Director 3 name</li>
+                    </ul>
+                </div>
+            </div>       
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-header">
+                     Genres
+                    </div>
+                    <ul class="list-group list-group-flush">
+                     <li class="list-group-item">Genre 1 name</li>
+                     <li  class="list-group-item">Genre 2 name</li>
+                     <li  class="list-group-item">Genre 3 name</li>
+                    </ul>
+                </div>
+            </div>       
+        </div>  
+    </div>
+</div>
+<hr>
+<br>
+<br>
+<div class="row">
+    <h1>Actors</h1>
+    <br>
+    <div class="col-md-12 text-center">
+        <app-details-actors></app-details-actors>
+    </div>
+    <div class="text-center">
+        <a class="btn btn-warning">View All Actors</a>
+    </div>
+</div>
+<hr>
+<br>
+<h1>Reviews</h1>
+<br>
+<div class="col-md-12">
+    <app-details-reviews></app-details-reviews>
+</div>
+<br>
+<div class="text-center">
+    <a class="btn btn-warning">View All reviews</a>
+</div>
+<hr>
+<br>
+<h1>Similar movies</h1>
+<br>
+<div class="col-md-12">
+    <app-details-movies></app-details-movies>
+</div>
+
