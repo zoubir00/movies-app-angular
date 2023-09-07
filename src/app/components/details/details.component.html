@@ -7,7 +7,6 @@
          frameborder="0" 
          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowfullscreen>
-
         </iframe>
     </div>
     <div class="col-md-6">
@@ -63,7 +62,7 @@
         <app-details-actors></app-details-actors>
     </div>
     <div class="text-center">
-        <a class="btn btn-warning">View All Actors</a>
+        <a class="btn btn-warning" routerLink="/details/actors">View more</a>
     </div>
 </div>
 <hr>
@@ -75,7 +74,7 @@
 </div>
 <br>
 <div class="text-center">
-    <a class="btn btn-warning">View All reviews</a>
+    <a class="btn btn-warning" routerLink="/details/reviews">View more</a>
 </div>
 <hr>
 <br>
@@ -83,5 +82,8 @@
 <br>
 <div class="col-md-12">
     <app-details-movies></app-details-movies>
+</div>
+<div class="text-center">
+    <a class="btn btn-warning" routerLink="/details/movies">View more</a>
 </div>
 

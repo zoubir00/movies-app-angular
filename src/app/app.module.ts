@@ -16,6 +16,8 @@ import { DetailsComponent } from './components/details/details.component';
 import { profitPipe } from './pipes/profit.pipe';
 import { FormsModule } from '@angular/forms';
 import { DetailsActorsComponent } from './components/details-actors/details-actors.component';
+import { RouterModule } from '@angular/router';
+import { appRoutesModule } from './modules/app.routes';
 
 
 
@@ -40,6 +42,7 @@ import { DetailsActorsComponent } from './components/details-actors/details-acto
   imports: [
     BrowserModule,
     AppRoutingModule,
+    appRoutesModule,
     FormsModule
   ],
   providers: [],
