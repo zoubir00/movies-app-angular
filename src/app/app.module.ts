@@ -18,6 +18,7 @@ import { FormsModule } from '@angular/forms';
 import { DetailsActorsComponent } from './components/details-actors/details-actors.component';
 import { RouterModule } from '@angular/router';
 import { appRoutesModule } from './modules/app.routes';
+import { NotFoundComponent } from './components/not-found/not-found.component';
 
 
 
@@ -37,7 +38,9 @@ import { appRoutesModule } from './modules/app.routes';
     DetailsActorsComponent,
 
     //pipes
-    profitPipe
+    profitPipe,
+    // 404 not found page
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,

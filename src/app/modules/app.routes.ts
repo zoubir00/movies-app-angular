@@ -6,18 +6,22 @@ import { DetailsReviewsComponent } from "../components/details-reviews/details-r
 import { HomeComponent } from "../components/home/home.component";
 import { DetailsComponent } from "../components/details/details.component";
 import { SearchComponent } from "../components/search/search.component";
+import { NotFoundComponent } from "../components/not-found/not-found.component";
 
 const routes:Routes=[
-    {path:'', component:HomeComponent},
+      {path:'', component:HomeComponent},
       {path:'home',  component:HomeComponent},
-      {path:'details/actors',  component:DetailsActorsComponent},
-      {path:'details/movies',  component:DetailsMoviesComponent},
-      {path:'details/reviews',  component:DetailsReviewsComponent},
+      {path:'details/actors/:id',  component:DetailsActorsComponent},
+      {path:'details/movies/:id',  component:DetailsMoviesComponent},
+      {path:'details/reviews/:id',  component:DetailsReviewsComponent},
       {path:'home',  component:HomeComponent},
-      {path:'details',  component:DetailsComponent},
+      {path:'details/:id',  component:DetailsComponent},
       {path:'feedback',  component:HomeComponent},
-      {path:'search',  component:SearchComponent}
-];
+      { path: 'search/:movieTitle', component: SearchComponent },
+     //   not found page doesn't exist
+      { path: '**', component: NotFoundComponent }
+
+]
 @NgModule({
     imports:[
         RouterModule.forRoot(routes)
