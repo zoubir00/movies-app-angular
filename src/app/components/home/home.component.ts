@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent {
+  errorColor='text-danger';
+  successColor='text-success';
+  isSuccess=true;
+
 
 }

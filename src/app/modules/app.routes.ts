@@ -11,11 +11,17 @@ import { NotFoundComponent } from "../components/not-found/not-found.component";
 const routes:Routes=[
       {path:'', component:HomeComponent},
       {path:'home',  component:HomeComponent},
-      {path:'details/actors/:id',  component:DetailsActorsComponent},
-      {path:'details/movies/:id',  component:DetailsMoviesComponent},
-      {path:'details/reviews/:id',  component:DetailsReviewsComponent},
-      {path:'home',  component:HomeComponent},
       {path:'details/:id',  component:DetailsComponent},
+      {path:'details/actors/:id',  component:DetailsActorsComponent},
+       {path:'details/movies/:id',  component:DetailsMoviesComponent},
+       {path:'details/reviews/:id',  component:DetailsReviewsComponent},
+
+    // nested rout
+    //   {path:'details/:id',  component:DetailsComponent,children:[
+    //     {path:'actors',  component:DetailsActorsComponent},
+    //     {path:'movies',  component:DetailsMoviesComponent},
+    //     {path:'reviews',  component:DetailsReviewsComponent}
+    //   ]},
       {path:'feedback',  component:HomeComponent},
       { path: 'search/:movieTitle', component: SearchComponent },
      //   not found page doesn't exist
