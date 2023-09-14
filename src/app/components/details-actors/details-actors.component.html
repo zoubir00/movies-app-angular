@@ -1,36 +1,6 @@
-<figure class="figure">
-    <img src="https://th.bing.com/th/id/OIP.TMapqeVZ9hICKUPrNu0_PAHaLH?pid=ImgDet&rs=1" width="180px;" class="figure-img img-fluid rounded me-2" alt="Ian Somerhalder">
-    <figcaption class="figure-caption">Ian Somerhalder</figcaption>
+<figure *ngFor="let actor of actors" class="figure">
+    <img [src]="actor.imageUrl" width="180px;" class="figure-img img-fluid rounded me-2" alt="Ian Somerhalder">
+    <figcaption class="figure-caption">{{actor.actorName}}</figcaption>
+    <figcaption class="figure-caption">{{actor.role}}</figcaption>
 </figure>
-<figure class="figure">
-    <img src="https://th.bing.com/th/id/OIP.TMapqeVZ9hICKUPrNu0_PAHaLH?pid=ImgDet&rs=1" width="180px;" class="figure-img img-fluid rounded me-2" alt="Ian Somerhalder">
-    <figcaption class="figure-caption">Ian Somerhalder</figcaption>
-</figure>
-<figure class="figure">
-    <img src="https://th.bing.com/th/id/OIP.TMapqeVZ9hICKUPrNu0_PAHaLH?pid=ImgDet&rs=1" width="180px;" class="figure-img img-fluid rounded me-2" alt="Ian Somerhalder">
-    <figcaption class="figure-caption">Ian Somerhalder</figcaption>
-</figure>
-<figure class="figure">
-    <img src="https://th.bing.com/th/id/OIP.TMapqeVZ9hICKUPrNu0_PAHaLH?pid=ImgDet&rs=1" width="180px;" class="figure-img img-fluid rounded me-2" alt="Ian Somerhalder">
-    <figcaption class="figure-caption">Ian Somerhalder</figcaption>
-</figure>
-<figure class="figure">
-    <img src="https://th.bing.com/th/id/OIP.TMapqeVZ9hICKUPrNu0_PAHaLH?pid=ImgDet&rs=1" width="180px;" class="figure-img img-fluid rounded me-2" alt="Ian Somerhalder">
-    <figcaption class="figure-caption">Ian Somerhalder</figcaption>
-</figure>
-<figure class="figure">
-    <img src="https://th.bing.com/th/id/OIP.TMapqeVZ9hICKUPrNu0_PAHaLH?pid=ImgDet&rs=1" width="180px;" class="figure-img img-fluid rounded me-2" alt="Ian Somerhalder">
-    <figcaption class="figure-caption">Ian Somerhalder</figcaption>
-</figure>
-<figure class="figure">
-    <img src="https://th.bing.com/th/id/OIP.TMapqeVZ9hICKUPrNu0_PAHaLH?pid=ImgDet&rs=1" width="180px;" class="figure-img img-fluid rounded me-2" alt="Ian Somerhalder">
-    <figcaption class="figure-caption">Ian Somerhalder</figcaption>
-</figure>
-<figure class="figure">
-    <img src="https://th.bing.com/th/id/OIP.TMapqeVZ9hICKUPrNu0_PAHaLH?pid=ImgDet&rs=1" width="180px;" class="figure-img img-fluid rounded me-2" alt="Ian Somerhalder">
-    <figcaption class="figure-caption">Ian Somerhalder</figcaption>
-</figure>
-<figure class="figure">
-    <img src="https://th.bing.com/th/id/OIP.TMapqeVZ9hICKUPrNu0_PAHaLH?pid=ImgDet&rs=1" width="180px;" class="figure-img img-fluid rounded me-2" alt="Ian Somerhalder">
-    <figcaption class="figure-caption">Ian Somerhalder</figcaption>
-</figure>
+

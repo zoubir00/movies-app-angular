@@ -9,7 +9,9 @@ import { ActivatedRoute } from '@angular/router';
 export class DetailsComponent  {
   
   movieId = '';
-
+stars=['star #1 name','star #2 name','star #3 name']
+Directors=['Director #1 name','Director #2 name','Director #3 name']
+Genres=['Genre #1 name','Genre #2 name','Genre #3 name']
   constructor(private _activedRoute: ActivatedRoute) {
 
     this._activedRoute.params.subscribe((p) => {
